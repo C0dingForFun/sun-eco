@@ -1,0 +1,197 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:Tahoma;
+}
+
+
+body{
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+
+span img{
+	width:200px;
+	height:100px;
+	position:relative;
+	top:0;
+	left:0;
+
+}
+
+.background{
+	position:absolute;
+	width:100%;
+	height:100%;
+	
+	/*background*/
+	z-index:0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	/*animation for background-images*/ 
+	animation-name:slideshow;
+	animation-duration:10s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+}
+
+/*slideshow*/
+@keyframes slideshow{
+	
+	0%{
+		background-image: url("SlideShow/Plane.jpg");
+	}
+	
+	25%{
+		background-image: url("SlideShow/Banner.jpg");
+	}	
+	
+	50%{
+		background-image: url("Images/About.jpg");
+	}	
+	
+	75%{
+		background-image: url("SlideShow/People.jpg");
+	}
+	
+	100%{
+		background-image: url("SlideShow/Screen.jpg")
+	}
+}
+
+/* display name of locations */
+.location{
+	display:flex;
+	justify-content:center;
+	background-color:rgba(0, 0, 0, 0.8);
+	position:absolute;
+	bottom:75px;
+	border-radius:0px 0px 24px 24px;
+	width:400px;
+	font-size:30px;
+	color:white;
+	height:80px;
+	opacity:0.5;
+	align-items:center;
+	font-weight:bold;
+}
+
+/*moves to next row of images*/
+.top{
+	position:absolute;
+	top:915px;
+} 
+
+/* display black background on banner */
+.banner{
+	z-index:0;
+	background-color:rgba(0, 0, 0, 0.5);
+	position:absolute;
+	top:0;
+	font-size:20px;
+	text-align:center; 
+	width:100%;
+	height:800px;
+}
+
+.info{
+	position:relative;
+	text-align:center; 
+	width:100%;
+	height:630px;
+	top:0;
+	font-size:20px;
+	text-align:center; 
+	color:green;
+	
+}
+
+.info a button{
+	position:relative;
+	background-color:white;
+	width:150px;
+	height:50px; 
+	text-align:center;
+	color:green;
+	font-size:20px;
+	font-weight:bold;
+	border:double 2px green;
+	transition: all 0.3s;
+}
+
+.info a button:hover{
+	cursor:pointer;
+	font-size:20px;
+	background-color:green; 
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	border:double 2px green;
+	transform:translateY(-5px);
+
+}
+
+.content{
+	display:flex;
+	width:100%; 
+	height:600px;
+	background-color:white;
+	position:absolute;
+	text-align:center;
+	margin:auto;
+	gap:0.5em;
+	flex-wrap:wrap;
+}
+
+.r1{
+	display:flex;
+	width:100%;
+	height:auto;
+	justify-content:space-evenly;
+	
+}
+
+.r1 img:hover{
+	transform:scale(1.1);
+	transition:all 0.1s;
+	
+}
+
+.r2{
+	display:flex;
+	width:100%;
+	height:auto;
+	justify-content:space-evenly;
+}
+
+.r2 img:hover{
+	transform:scale(1.1);
+	transition:all 0.1s;
+}
+
+input{
+	background-color:white;
+	border:solid 0.1px green;
+	color:green;
+	width:200px; 
+	height:40px; 
+	margin:auto;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	transition:all 0.3s;
+}
+input:hover{
+	cursor:pointer;
+	background-color:green; 
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	border:double 2px green;
+	transform:translateY(-5px);
+}

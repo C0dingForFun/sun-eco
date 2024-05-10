@@ -1,0 +1,23 @@
+.Footer{
+	width:100%;
+	height:auto;
+	background-color:black;
+	color:green;
+}
+
+.rights-icons{
+	display:flex;
+	justify-content:space-between;
+}
+
+.links{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	height:auto;
+}
+
+.h1{
+	cursor:pointer;
+	color:gray;
+}

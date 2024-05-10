@@ -1,0 +1,50 @@
+.grid-nav{
+	display:grid;
+	margin:auto;
+	width:100%;
+	grid-template-columns:repeat(6, 1fr);
+	height:auto;
+	position:relative;
+	right:6px;
+	bottom:35px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.nav{
+	grid-column:1/-1;
+	height:100px;
+	display:flex;
+	overflow:hidden;
+	position:relative;
+	top:70px;
+}
+
+.nav a
+{
+	float:left;
+	color:white;
+	font-size:1em;
+	font-weight:bold;
+	text-decoration:none;
+	margin-left:30px;
+	font-size:20px;
+}
+
+.nav span a{
+	display:flex;
+	justify-content:center;
+}
+.nav a:hover
+{
+	color:green;
+}
+
+ span img{
+	width:200px;
+	height:100px;
+	position:relative;
+	top:43px;
+	left:0;
+	bottom:20px;
+}
